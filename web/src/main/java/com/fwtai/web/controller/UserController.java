@@ -53,7 +53,7 @@ public class UserController{
     @PostMapping(value = "/renewalToken")
     public void renewalToken(final HttpServletRequest request,final HttpServletResponse response){
         final PageFormData formData = ToolClient.getFormData(request);
-        final String access_token = formData.getString("access_token");
+        final String access_token = formData.getString("accessToken");
         try {
             final Claims claims = ToolJWT.parser(access_token);
             final String userId = claims.getId();

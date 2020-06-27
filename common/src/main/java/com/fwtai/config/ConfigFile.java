@@ -16,8 +16,8 @@ public final class ConfigFile implements Serializable{
     /**token请求头名称*/
     //public final static String TOKEN_HEADER_NAME = "authorization";
 
-    public final static String ACCESS_TOKEN = "access_token";
-    public final static String REFRESH_TOKEN = "refresh_token";
+    public final static String ACCESS_TOKEN = "accessToken";
+    public final static String REFRESH_TOKEN = "refreshToken";
 
 	/**自定义code及msg*/
 	public final static int code198 = 198;
