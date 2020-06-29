@@ -4,7 +4,7 @@ import com.fwtai.auth.CustomizedToken;
 import com.fwtai.bean.PageFormData;
 import com.fwtai.config.ConfigFile;
 import com.fwtai.config.LocalUserId;
-import com.fwtai.dao.UserDao;
+import com.fwtai.core.UserDao;
 import com.fwtai.entity.User;
 import com.fwtai.service.AsyncService;
 import com.fwtai.tool.ToolClient;
