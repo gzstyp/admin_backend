@@ -43,9 +43,8 @@ public class UserController{
     public void logout(final HttpServletResponse response){
         ToolClient.responseJson(userService.logout(),response);
     }
-
-    @RequiresPermissions("user:btn:listData")
-    @GetMapping(value = "/permissions",name = "user:btn:listData")
+    
+    @GetMapping(value = "/permissions")
     public void permissions(final HttpServletRequest request,final HttpServletResponse response){
         ToolClient.responseJson(userService.permissions(new PageFormData(request)),response);
     }
